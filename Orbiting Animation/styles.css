@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@-webkit-keyframes starPulse {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+@-moz-keyframes starPulse {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+@-o-keyframes starPulse {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+@keyframes starPulse {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
+@-webkit-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        -o-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    to {
+      -webkit-box-shadow: 0 0 100px #f5c91a;
+      -moz-box-shadow: 0 0 100px #f5c91a;
+      -o-box-shadow: 0 0 100px #f5c91a;
+      box-shadow: 0 0 100px #f5c91a;
+    }
+}
+@-moz-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        -o-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    to {
+      -webkit-box-shadow: 0 0 100px #f5c91a;
+      -moz-box-shadow: 0 0 100px #f5c91a;
+      -o-box-shadow: 0 0 100px #f5c91a;
+      box-shadow: 0 0 100px #f5c91a;
+    }
+}
+@-o-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        -o-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    to {
+      -webkit-box-shadow: 0 0 100px #f5c91a;
+      -moz-box-shadow: 0 0 100px #f5c91a;
+      -o-box-shadow: 0 0 100px #f5c91a;
+      box-shadow: 0 0 100px #f5c91a;
+    }
+}
+@keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        -o-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    to {
+      -webkit-box-shadow: 0 0 100px #f5c91a;
+      -moz-box-shadow: 0 0 100px #f5c91a;
+      -o-box-shadow: 0 0 100px #f5c91a;
+      box-shadow: 0 0 100px #f5c91a;
+    }
+}
+@-webkit-keyframes rotate {
+  from{ transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+@-moz-keyframes rotate {
+  from{ transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+@-o-keyframes rotate {
+  from{ transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+@keyframes rotate {
+  from{ transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+html, body {
+    height: 100%;
+    widows: 100%;
+}
+#universe {
+    background: black;
+    background: -webkit-radial-gradient(#555, #000);
+    background: -moz-radial-gradient(#555, #000);
+    background: -o-radial-gradient(#555, #000);
+    background: radial-gradient(#555, #000);
+}
+#stars {
+    position: relative;
+    height: 100%;
+    widows: 100%;
+    background: url('imgs/Stars.png');
+    z-index: 1;
+    -webkit-animation: starPulse 3s infinite alternate;
+    -moz-animation: starPulse 3s infinite alternate;
+    -o-animation: starPulse 3s infinite alternate;
+    animation: starPulse 3s infinite alternate;
+}
+#sun {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 200px;
+    width: 200px;
+    background: orange;
+    background: -webkit-radial-gradient(#f5c313, #ec7e08);
+    background: -moz-radial-gradient(#f5c313, #ec7e08);
+    background: -o-radial-gradient(#f5c313, #ec7e08);
+    background: radial-gradient(#f5c313, #ec7e08);
+    z-index: 100;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    box-shadow: 0 0 50px #f5c91a;
+    -webkit-animation: sunFire 3s infinite alternate;
+    -moz-animation: sunFire 3s infinite alternate;
+    -o-animation: sunFire 3s infinite alternate;
+    animation: sunFire 3s infinite alternate;
+}
+#earth-orbit {
+    /*border: solid 1px red;*/
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    height: 400px;
+    width: 800px;
+    z-index: 50;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-animation: rotate 30s linear infinite;
+    -moz-animation: rotate 30s linear infinite;
+    -o-animation: rotate 30s linear infinite;
+    animation: rotate 30s linear infinite;
+}
+#earth {
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    -webkit-animation: rotate 10s infinite linear;
+    -moz-animation: rotate 10s infinite linear;
+    -o-animation: rotate 10s infinite linear;
+    animation: rotate 10s infinite linear;
+}
+#moon-orbit {
+    /*border: solid 1px red;*/
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 33%;
+    left: -40px;
+    z-index: 50;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-animation: rotate 5s linear infinite;
+    -moz-animation: rotate 5s linear infinite;
+    -o-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite;
+}
+#moon {
+    height: 30px;
+    width: 30px;
+    background: gray;
+    background: -webkit-radial-gradient(#ddd, #888);
+    background: -moz-radial-gradient(#ddd, #888);
+    background: -o-radial-gradient(#ddd, #888);
+    background: radial-gradient(#ddd, #888);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+
+}
